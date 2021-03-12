@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>帳號註冊</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../js/register.js"></script>
+<script src="../js/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="../js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+<script src="../js/form-validation.js"></script></body>
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="../css/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="../img/Logo.png" alt="" width="216" height="72">
+    <h2>Creat a new acount</h2>    
+  </div>
+  
+      <form class="needs-validation" method="post" action="register_finish.php" onsubmit="return encryptPw(setNewPw)" novalidate>
+
+        <div class="row">
+          <div class="col-md-2 mb-3"></div>
+          <div class="col-md-4 mb-3">
+            <label for="firstName">Name</label>
+            <input type="text" class="form-control" id="name" name = "name"placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-3">
+            <label for="studentID">Student ID</label>
+            <input type="text" class="form-control" id="id" name = "id" placeholder="studentID">
+              <div class="invalid-feedback">
+                  Please enter a valid student id.
+              </div>
+          </div>
+          <div class="col-md-2 mb-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 mb-3"></div>
+            <div class="col-md-4 mb-3">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="pw" name = "pw" required>
+                <div class="invalid-feedback">
+                    Please enter your password.
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+              <label for="password2">Repassword</label>
+              <input type="password" class="form-control" id="pw2" name = "pw2" required>
+              <div class="invalid-feedback">
+                  Please enter your password.
+              </div>
+            </div>
+            <div class="col-md-2 mb-3"></div>
+          </div>
+
+        <div class="row">
+          <div class="col-md-2 mb-3"></div>
+          <div class="col-md-4 mb-3">
+            <label for="date">Birthday</label>
+            <input class="form-control" id="birthday" name="birthday" type="date" required>
+          </div>
+
+          <div class="col-md-4 mb-3">
+              <label for="address">Cellphone</label>
+              <input type="text" class="form-control" id="cellphone" name = "cellphone" required>
+              <div class="invalid-feedback">
+                  Please enter your cellphone.
+              </div>
+          </div>      
+          <div class="col-md-3 mb-3"></div>    
+        </div>
+        
+        <div class="row">
+            <div class="col-md-2 mb-3"></div>
+            <div class="col-md-6 mb-3">
+                <label for="address">Wallet</label>
+                <input class="form-control" id="wallet" type="text" name="wallet" readonly required>
+            </div>
+        
+            <div class="col-md-2 mb-3">
+                <div class="row"><div class="col-md-2 mb-4"></div></div>
+              <input class="btn btn-primary" type="submit" value="送出">
+            </div>      
+            <div class="col-md-2 mb-3"></div>    
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2019 NDHU CSIE</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+</html>

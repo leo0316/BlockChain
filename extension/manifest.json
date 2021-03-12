@@ -1,0 +1,13 @@
+{
+   "manifest_version": 2,
+   "name": "My Addon", 
+   "version": "1.0", 
+   "description": "Description here.", 
+   "icons": { "48": "extension_icon.png" }, 
+   "content_scripts": [
+      { 
+        "matches": ["http://localhost/BlockChain0424/zh-tw/member.php"], 
+        "js": ["extension.js"] 
+      } 
+    ] 
+}
